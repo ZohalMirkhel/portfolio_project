@@ -100,13 +100,17 @@ nav {
 
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+    font-size: 80%;
+  }
+  .about-col-1 img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size: 80%;
   }
   .container1 {
     font-size: 1em;
@@ -123,19 +127,36 @@ nav {
   .details {
     text-align: left;
   }
+  .about-col-1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  #span {
+    font-size: 36px;
+    display: block;
+  }
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 24.75em) {
   html {
-    font-size: 55%;
+    font-size: 40%;
   }
 
   .nav {
     justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 
-  .nav-list {
-    margin: 0 1rem;
+  .about-col-1 img {
+    display: none;
+  }
+  #span {
+    font-size: 8px;
+    display: block;
+  }
+  .squid {
+    display: none;
   }
 }
 
@@ -172,7 +193,7 @@ nav {
     width: 5em;
     position: absolute;
     transform: translate(-40%, -60%);
-    left: 85%;
+    left: 75%;
     top: 65%;
 }
 
@@ -282,8 +303,8 @@ nav {
 }
 
 .legs:before {
-    transform: rotate(-30deg);
-    left: 1.5em;
+  transform: rotate(-30deg);
+  left: 1.5em;
 }
 
 .legs:after {
@@ -373,3 +394,35 @@ nav {
   color: transparent;
 }
 
+#span {
+  position: relative;
+  font-size: 48px;
+  color: black;
+  -webkit-text-stroke: #be3144;
+  
+}
+
+#span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 2;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #f01c8a, #f53e2f);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0vw #be3144;
+  border-right: 2px solid #f01c8a;
+  overflow: hidden;
+  animation: animate1 6s linear infinite;
+}
+
+@keyframes  animate1 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
