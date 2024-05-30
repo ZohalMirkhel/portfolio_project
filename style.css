@@ -243,7 +243,7 @@ nav .left a:hover::after {
 
 @keyframes swim {
   50% {
-    transform: translateY(3em) scaleY(0.90);
+    transform: translateY(3em) scaleY(0.9);
   }
 }
 
@@ -354,7 +354,7 @@ nav .left a:hover::after {
 
 @keyframes showMessage {
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -392,7 +392,7 @@ nav .left a:hover::after {
 .title {
   font-size: 60px;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff;
 }
 
 .sub-title {
@@ -447,7 +447,7 @@ nav .left a:hover::after {
   animation: animate1 6s linear infinite;
 }
 
-@keyframes  animate1 {
+@keyframes animate1 {
   0%,
   10%,
   100% {
@@ -476,7 +476,7 @@ nav .left a:hover::after {
 }
 
 .project-title {
-  color:#444;
+  color: #444;
   font-size: 22px;
   padding: 10px 0;
 }
@@ -633,29 +633,34 @@ nav .left a:hover::after {
 .wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
+
 .wrapper .facebook:hover span,
 .wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before{
-  background: #3B5999;
+.wrapper .facebook:hover .tooltip:before {
+  background: #3b5999;
 }
+
 .wrapper .twitter:hover span,
 .wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
-  background: #46C1F6;
+.wrapper .twitter:hover .tooltip::before {
+  background: #46c1f6;
 }
+
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before{
+.wrapper .instagram:hover .tooltip::before {
   background: linear-gradient(to right, #f01c8a, #f53e2f);
 }
+
 .wrapper .github:hover span,
 .wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
+.wrapper .github:hover .tooltip::before {
   background: #333;
 }
+
 .wrapper .google:hover span,
 .wrapper .google:hover .tooltip,
-.wrapper .google:hover .tooltip:before {
+.wrapper .google:hover .tooltip::before {
   background: #d80c19;
 }
 
@@ -688,7 +693,7 @@ footer {
   text-transform: uppercase;
   width: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-  line-height: 0.70em;
+  line-height: 0.7em;
   outline: none;
   animation: animate2 5s linear infinite;
 }
@@ -716,10 +721,10 @@ footer {
   100% {
     color: white;
     text-shadow:
-    0 0 10px #cd0856,
-    0 0 20px #cd0856,
-    0 0 40px #cd0856,
-    0 0 80px #cd0856,
-    0 0 160px #cd0856;
+      0 0 10px #cd0856,
+      0 0 20px #cd0856,
+      0 0 40px #cd0856,
+      0 0 80px #cd0856,
+      0 0 160px #cd0856;
   }
 }
