@@ -373,7 +373,7 @@ nav .left a:hover::after {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-col-1,
@@ -397,12 +397,12 @@ nav .left a:hover::after {
 
 .sub-title {
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .details {
   padding: 2rem 0;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
@@ -448,10 +448,14 @@ nav .left a:hover::after {
 }
 
 @keyframes  animate1 {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%, 90% {
+
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -464,7 +468,7 @@ nav .left a:hover::after {
 .projects-section-header {
   text-align: center;
   padding-bottom: 15px;
-  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 50px;
   background: linear-gradient(to right, #f01c8a, #f53e2f);
   -webkit-background-clip: text;
@@ -474,7 +478,7 @@ nav .left a:hover::after {
 .project-title {
   color:#444;
   font-size: 22px;
-  padding:10px 0;
+  padding: 10px 0;
 }
 
 .project-title .code {
@@ -484,22 +488,22 @@ nav .left a:hover::after {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap:15px;
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  gap: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-align: center;
-  padding:30px 20px;
+  padding: 30px 20px;
 }
 
 .project {
   margin: 30px;
-  color:#777;
+  color: #777;
   font-size: 15px;
   line-height: 1.8;
 }
 
 .project:hover {
-  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.24);
 }
 
@@ -609,7 +613,7 @@ nav .left a:hover::after {
   pointer-events: auto;
 }
 
-.icon .tooltip:before {
+.icon .tooltip::before {
   position: absolute;
   content: "";
   height: 15px;
